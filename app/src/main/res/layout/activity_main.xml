@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_x_edit_text"
+        android:layout_width="370dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/input_x_edit_text"
+        android:inputType="textPersonName"
+        android:text="@string/input_x_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathOperation_text_view" />
+
+    <EditText
+        android:id="@+id/input_y_edit_text"
+        android:layout_width="348dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/input_y_edit_text"
+        android:inputType="textPersonName"
+        android:text="@string/input_y_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/input_x_edit_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_x_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/input_x_edit_text"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/addition_text_view"
+        android:layout_width="338dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/addition_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/input_y_edit_text"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="@+id/input_y_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/input_y_edit_text" />
+
+    <Button
+        android:id="@+id/calculator_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:text="@string/calculator_button"
+        app:layout_constraintEnd_toEndOf="@+id/addition_text_view"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="@+id/addition_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/addition_text_view" />
+
+    <TextView
+        android:id="@+id/subtraction_text_view"
+        android:layout_width="336dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/subtraction_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/input_y_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/input_y_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/addition_text_view" />
+
+    <TextView
+        android:id="@+id/multiplication_text_view"
+        android:layout_width="351dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/multiplication_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/subtraction_text_view"
+        app:layout_constraintStart_toStartOf="@+id/subtraction_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction_text_view" />
+
+    <TextView
+        android:id="@+id/division_text_view"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/division_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/multiplication_text_view"
+        app:layout_constraintStart_toStartOf="@+id/multiplication_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/multiplication_text_view" />
+
+    <TextView
+        android:id="@+id/mathOperation_text_view"
+        android:layout_width="252dp"
+        android:layout_height="46dp"
+        android:text="@string/mathOperation_text_view"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
